@@ -22,7 +22,7 @@ function getProgress(form) {
         alert(`Произошла ошибка во время отправки: ${xhr.status}`);
     };
 
-    request.open('POST', 'https://netology-slow-rest.herokuapp.com/upload.php');
+    request.open('POST', 'https://students.netoservices.ru/nestjs-backend/upload');
     request.setRequestHeader('Content-type', 'multipart/form-data');
    
     request.send(formData);
